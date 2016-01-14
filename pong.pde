@@ -13,7 +13,7 @@ var dist_wall = 8;
 
 // Adding total hits here...
 //float total = 0;
-float highscore = 0;
+float highscore bro = 0;
 float score = 0;
 
 void setup() {
@@ -31,7 +31,7 @@ void draw() {
     background(0,255,51);
 
     // Increment x and y by speed of ball
-    ball_x += ball_dir * 50.0;
+    ball_x += ball_dir * 30.0;
     ball_y += dy;
 
     // If the ball was missed... start over
