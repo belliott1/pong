@@ -28,13 +28,13 @@ void setup() {
 
 void draw() {
     // Background color... RGB
-    background(20,255,51);
+    background(20,25,221);
 
     // Increment x and y by speed of ball
     ball_x += ball_dir * 15.0;
     ball_y += dy;
 
-    // If the ball was missed... reverse direction;
+    // If the ball was missed... add new ball;
     if(ball_x > width+ball_size) {
         ball_x = -width/2 - ball_size;
         ball_y = random((0.25*height), (0.75*height));
