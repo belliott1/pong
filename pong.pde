@@ -17,7 +17,7 @@ float highscore = 0;
 float score = 0;
 
 void setup() {
-    size(300, 500);
+    size(400, 500);
     rectMode(CENTER_RADIUS);
     ellipseMode(CENTER_RADIUS);
     noStroke();
@@ -34,7 +34,7 @@ void draw() {
     ball_x += ball_dir * 15.0;
     ball_y += dy;
 
-    // If the ball was missed... start over
+    // If the ball was missed... reverse direction;
     if(ball_x > width+ball_size) {
         ball_x = -width/2 - ball_size;
         ball_y = random((0.25*height), (0.75*height));
